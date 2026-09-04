@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(./img/PLANO\ DE\ FUNDOOOOOOO\ NAO\ APAGA.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.perfil {
+    background: #202238;
+    border: 2px solid rgb(47, 133, 245);
+    border-radius: 14px;
+    padding: 20px 14px;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.18);
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.foto {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    border: 2px solid rgb(47, 133, 245);
+    padding: 3px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dados h1 {
+    color: rgb(47, 133, 245);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.dados p {
+    color: #4ed0d0;
+    font-size: 10px;
+}
+
+
+.estatisticas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+.estatistica {
+    text-align: center;
+}
+
+.estatistica strong {
+    display: block;
+    color: #4bd2d2;
+    font-size: 17px;
+}
+
+.estatistica {
+    color: #aeb1c4;
+    font-size: 8px;
+    display: block;
+    margin-top: 3px;
+}
+
+
+
+h2 {
+    color: rgb(47, 133, 245);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 14px;
+    text-shadow: 0 2px 4px #000;
+}
+
+
+
+.cartas-section {
+    margin-top: 28px;
+}
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+
+}
+
+.carta {
+ width: 130px;
+    min-height: 105px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 12px rgba(255,255,255,0.08);
+
+    position: relative;
+}
+
+.carta img {
+  position: relative;
+    width: 71%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 9px;
+}
+
+.carta .nivel {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+    background: linear-gradient(#f7f7f7, #bfc3c9);
+    color: #222;
+    font-weight: 900;
+    font-size: 10px;
+
+    width: 23px;
+    height: 23px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #686b70;
+    box-shadow:
+        0 2px 3px rgba(0,0,0,0.6),
+        inset 0 1px 2px rgba(255,255,255,0.9);
+
+    z-index: 10;
+}
+
+.icone {
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.carta p {
+    font-size: 9px;
+    color: white;
+}
+
+
+.links-section {
+    margin-top: 28px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-box {
+    min-height: 60px;
+    background: #292d48;
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-text h3 {
+    color: rgb(47, 133, 245);
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.link-text p {
+    color: #b6b8c8;
+    font-size: 9px;
+}
+
+.botao {
+    background: #4dd0d0;
+    color: #111827;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 8px 13px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background: #6ee4e4;
+}
+
+@media (max-width: 330px) {
+
+    .cartas {
+        gap: 6px;
+    }
+
+    .carta {
+        height: 80px;
+    }
+
+    .icone {
+        font-size: 23px;
+    }
+
+    .carta p {
+        font-size: 8px;
+    }
+
+    .dados h1 {
+        font-size: 17px;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .container {
+        max-width: 500px;
+    }
+
+    .carta {
+        height: 105px;
+    }
+
+}
